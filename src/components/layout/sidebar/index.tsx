@@ -13,9 +13,9 @@ const Sidebar = () => {
   const pathname = usePathname()
 
   return (
-    <aside className="hidden md:flex flex-col justify-between items-center lg:items-start max-w-[240px] md:w-[72px] lg:w-1/4 h-full py-4 md:pr-4 lg:px-4">
-      <div className="space-y-2">
-        {/* <Logo /> */}
+    <aside className="hidden md:flex flex-col justify-between items-center lg:items-start max-w-[240px] md:w-[72px] xl:w-1/4 h-full py-4 md:pr-4 xl:px-4">
+      <div className="space-y-4">
+        <Logo />
 
         {SidebarLinks.map(item => (
           <SidebarItem

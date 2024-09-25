@@ -11,7 +11,7 @@ const Logo = () => {
   return (
     <div
       onClick={() => router.push('/')}
-      className="flex justify-center items-center w-14 h-14 p-4 rounded-full transition cursor-pointer hover:bg-blue-300"
+      className="flex justify-center items-center w-14 h-14 p-4 rounded-full transition cursor-pointer hover:bg-secondary"
     >
       <Image
         src={logo}

@@ -25,13 +25,13 @@ const SidebarItem = ({
       <Link
         href={href}
         className={cn(
-          'flex lg:hidden justify-center items-center p-3 rounded-full cursor-pointer hover:bg-secondary',
+          'flex xl:hidden justify-center items-center p-3 rounded-full cursor-pointer hover:bg-secondary',
           isActive && 'bg-secondary'
         )}
       >
         <Hint side="bottom" label={label}>
           {isActive ? (
-            <ActiveIcon size={24} className="text-white" />
+            <ActiveIcon size={24} className="text-black dark:text-white" />
           ) : (
             <Icon size={24} />
           )}
@@ -41,12 +41,12 @@ const SidebarItem = ({
       <Link
         href={href}
         className={cn(
-          'hidden lg:flex items-center gap-x-3 p-3 rounded-full cursor-pointer hover:bg-secondary',
+          'hidden xl:flex items-center gap-x-3 p-3 rounded-full cursor-pointer hover:bg-secondary',
           isActive && 'bg-secondary'
         )}
       >
         {isActive ? (
-          <ActiveIcon size={24} className="text-white" />
+          <ActiveIcon size={24} className="text-black dark:text-white" />
         ) : (
           <Icon size={24} />
         )}

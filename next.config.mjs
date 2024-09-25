@@ -7,7 +7,8 @@ envList.NEXT_PUBLIC_IC_HOST =
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: envList,
-  output: 'export'
+  output: 'export',
+  images: { unoptimized: true }
 };
 
 export default nextConfig;
