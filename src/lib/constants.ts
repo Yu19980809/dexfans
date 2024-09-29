@@ -36,3 +36,22 @@ export const userOptions = [
     icon: Settings
   }
 ]
+
+export const links = [
+  {
+    label: 'Terms of Service',
+    href: '/service'
+  },
+  {
+    label: 'Privacy Policy',
+    href: '/privacy'
+  },
+  {
+    label: 'Cookie Policy',
+    href: '/cookie'
+  },
+  {
+    label: 'Ads info',
+    href: '/ads'
+  }
+]
