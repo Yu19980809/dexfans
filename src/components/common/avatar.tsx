@@ -11,13 +11,15 @@ import {
 
 type Props = {
   user: User
+  isMobile?: boolean
 }
 
-const AvatarItem = ({ user }: Props) => {
+const AvatarItem = ({ user, isMobile = false }: Props) => {
   const router = useRouter()
 
   const onClick = (e: any) => {
     e.stopPropagation()
+    if (isMobile) return
     router.push(`/users/${user.user_id}`)
   }
 

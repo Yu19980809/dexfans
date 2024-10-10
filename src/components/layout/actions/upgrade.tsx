@@ -8,7 +8,7 @@ const Upgrade = () => {
   const router = useRouter()
 
   return (
-    <div className="space-y-2 px-4 py-3 border rounded-xl">
+    <div className="space-y-2 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700">
       <p className="font-semibold text-xl">Upgrade to Premium</p>
       <p className="text-sm">Upgrade to unlock new features and if eligible, receive a share of ads revenue.</p>
       

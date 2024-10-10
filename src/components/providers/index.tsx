@@ -1,6 +1,5 @@
 import { Toaster } from 'react-hot-toast'
 
-import { AuthProvider } from './auth'
 import { ThemeProvider } from './theme'
 
 type Props = {
@@ -15,10 +14,8 @@ const Providers = ({ children }: Props) => {
       enableSystem
       disableTransitionOnChange
     >
-      <AuthProvider>
         <Toaster />
         {children}
-      </AuthProvider>
     </ThemeProvider>
   )
 }

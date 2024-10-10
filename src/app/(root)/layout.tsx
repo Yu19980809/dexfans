@@ -1,8 +1,8 @@
 import { redirect } from 'next/navigation'
 
-import Actions from '@/components/layout/actions'
 import Sidebar from '@/components/layout/sidebar'
-import MobileSidebar from '@/components/layout/mobile-sidebar'
+import Actions from '@/components/layout/actions'
+import PostButton from '@/components/layout/mobile/post-button'
 
 type Props = {
   children: React.ReactNode
@@ -16,9 +16,9 @@ const RootLayout = ({ children }: Props) => {
     <div className="h-screen">
       <div className="flex justify-center items-center h-full mx-auto">
         <Sidebar />
-        <MobileSidebar />
+        <PostButton />
 
-        <main className="max-w-3xl w-full h-full md:w-2/3 md:border-l lg:w-1/2 lg:border-x">
+        <main className="max-w-2xl w-full md:w-2/3 lg:w-1/2 h-full border-x border-gray-300 dark:border-gray-700">
           {children}
         </main>
 

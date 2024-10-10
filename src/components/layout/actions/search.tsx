@@ -17,13 +17,13 @@ const SearchBar = () => {
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
         className={cn(
-          'pl-10 w-full rounded-full bg-secondary outline-none focus-visible:ring-0 focus-visible:ring-offset-0',
+          'pl-10 w-full rounded-full bg-secondary/60 outline-none focus-visible:ring-0 focus-visible:ring-offset-0',
           isFocus && 'border-sky-500'
         )}
       />
 
       <Search className={cn(
-        'absolute top-3 left-3 w-4 h-4 text-muted-foreground',
+        'absolute top-3 left-4 w-4 h-4 text-muted-foreground',
         isFocus && 'text-sky-500'
       )} />
     </div>
